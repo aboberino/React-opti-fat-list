@@ -19,7 +19,7 @@ export default function WithoutReRender() {
     console.log('re-render')
 
     // fetched from db
-    const [users, setUsers] = useState<User[]>(Array.from({ length: 500 }).map(() => createRandomUser()))
+    const [users, setUsers] = useState<User[]>(Array.from({ length: 1000 }).map(() => createRandomUser()))
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>, userId: string, property: 'isActive' | 'isLate') => {
         console.log('handleChange')

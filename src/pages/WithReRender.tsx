@@ -18,7 +18,7 @@ export default function WithReRender() {
 
     console.log('re render')
 
-    const [users, setUsers] = useState(Array.from({ length: 500 }).map(() => createRandomUser()))
+    const [users, setUsers] = useState(Array.from({ length: 1000 }).map(() => createRandomUser()))
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>, userId: string, property: 'isActive' | 'isLate') => {
         console.log('handleChange')
